@@ -1,6 +1,6 @@
 {
   "name": "clickwheel-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple click wheel.",
   "main": "./lib/ClickWheel.js",
   "repository": {
