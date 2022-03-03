@@ -17,6 +17,8 @@ body {
   width: 218px;
   border-radius: 100%;
   border: 1px solid #c4c4c4;
+  background-color: white;
+  z-index: 10;
 }
 
 .iw-container .iw {
@@ -26,7 +28,7 @@ body {
 }
 
 .iw-container .iw-center-button {
-  height: 100px;
+  height: 80px;
   position: absolute;
   left: 0;
   right: 0;
@@ -37,38 +39,42 @@ body {
 
 .iw-container .iw-menu-button {
   position: absolute;
-  top: 20px;
+  top: 5px;
   left: 0;
   right: 0;
   margin: auto;
-  height: 14px;
+  height: 12px;
+  padding: 12px;
 }
 
 .iw-container .iw-play-pause-button {
   position: absolute;
-  bottom: 20px;
+  bottom: 4px;
   left: 0;
   right: 0;
   margin: auto;
-  height: 14px;
+  height: 13px;
+  padding: 10px;
 }
 
 .iw-container .iw-next-button {
   position: absolute;
-  right: 20px;
+  right: 5px;
   margin: auto;
   top: 0;
   bottom: 0;
-  height: 14px;
+  height: 13px;
+  padding: 5px;
 }
 
 .iw-container .iw-previous-button {
   position: absolute;
-  left: 20px;
+  left: 5px;
   margin: auto;
   top: 0;
   bottom: 0;
-  height: 14px;
+  height: 13px;
+  padding: 5px;
 }
 
 .iw-container img {
@@ -85,4 +91,14 @@ body {
 .iw-wheel-function {
   position: absolute;
   z-index: 10;
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

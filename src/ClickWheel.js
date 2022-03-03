@@ -1,13 +1,17 @@
 import $ from "jquery";
-import React from "react";
-import CenterButton from "./img/center-button.png";
-import MenuButton from "./img/menu-button.png";
-import NextButton from "./img/next-button.png";
-import PlayPauseButton from "./img/play-pause-button.png";
-import PreviousButton from "./img/previous-button.png";
+import React, { useEffect } from "react";
 import "./style.css";
 
 const ClickWheel = (props) => {
+  useEffect(() => {
+    $("#" + props.scrollerId).on("wheel mousewheel", function (e) {
+      e.preventDefault();
+      return false;
+    });
+
+    $("#" + props.scrollerId).addClass("hide-scroll");
+  }, []);
+
   var k = {}, // kontrol
     max = Math.max,
     min = Math.min;
@@ -760,31 +764,31 @@ const ClickWheel = (props) => {
       <div className="iw">
         <img
           onClick={props.onCenterClick}
-          src={CenterButton}
+          src="https://www.clickwheeljs.com/images/center-button.png"
           alt="Center button"
           className="iw-center-button"
         />
         <img
           onClick={props.onMenuClick}
-          src={MenuButton}
+          src="https://www.clickwheeljs.com/images/menu-button.png"
           alt="Menu button"
           className="iw-menu-button"
         />
         <img
           onClick={props.onPlayPause}
-          src={PlayPauseButton}
+          src="https://www.clickwheeljs.com/images/play-pause-button.png"
           alt="Play/Pause button"
           className="iw-play-pause-button"
         />
         <img
           onClick={props.onNext}
-          src={NextButton}
+          src="https://www.clickwheeljs.com/images/next-button.png"
           alt="Next button"
           className="iw-next-button"
         />
         <img
           onClick={props.onPrevious}
-          src={PreviousButton}
+          src="https://www.clickwheeljs.com/images/previous-button.png"
           alt="Previous button"
           className="iw-previous-button"
         />
