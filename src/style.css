@@ -1,0 +1,88 @@
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#body {
+  overflow: auto;
+  height: 100vh;
+}
+
+.iw-container {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  height: 218px;
+  width: 218px;
+  border-radius: 100%;
+  border: 1px solid #c4c4c4;
+}
+
+.iw-container .iw {
+  position: relative;
+  height: 220px;
+  width: 220px;
+}
+
+.iw-container .iw-center-button {
+  height: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.iw-container .iw-menu-button {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 14px;
+}
+
+.iw-container .iw-play-pause-button {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 14px;
+}
+
+.iw-container .iw-next-button {
+  position: absolute;
+  right: 20px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 14px;
+}
+
+.iw-container .iw-previous-button {
+  position: absolute;
+  left: 20px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 14px;
+}
+
+.iw-container img {
+  z-index: 11;
+  cursor: pointer;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.iw-wheel-function {
+  position: absolute;
+  z-index: 10;
+}
