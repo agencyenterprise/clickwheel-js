@@ -706,7 +706,7 @@ const ClickWheel = (props) => {
         const scrollHeight = el.prop("scrollHeight");
         const elHeight = el.height();
         if (scrollHeight - scroll > elHeight) {
-          i += 10;
+          i += 20;
           el.scrollTop(i);
         }
       },
@@ -714,7 +714,7 @@ const ClickWheel = (props) => {
         const el = $("#" + props.scrollerId);
         var scroll = el.scrollTop();
         if (scroll > 0) {
-          i -= 10;
+          i -= 20;
           el.scrollTop(i);
         } else {
           i = 0;
@@ -751,7 +751,7 @@ const ClickWheel = (props) => {
   });
 
   return (
-    <div className="iw-container">
+    <div className={"iw-container " + props.className}>
       <div className="iw-wheel-function">
         <input
           className="infinite"

@@ -1,6 +1,10 @@
-# clickwheel.js
+# [ClickWheelJS.com](https://clickwheeljs.com)
 
-Source code at https://github.com/agencyenterprise/clickwheel-js
+Source code [here](https://github.com/agencyenterprise/clickwheel-js)
+
+## Maker
+
+Made with <3 by [AE Studio](<[https://ae.studio/](https://ae.studio?utm_source=sds&utm_medium=referral&utm_campaign=clickwheeljs&utm_content=logo&utm_term=3ff5251a-e107-4d47-bfb8-b2962debd252)>)
 
 ## Installation
 

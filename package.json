@@ -1,7 +1,7 @@
 {
   "name": "clickwheel-js",
-  "version": "1.0.11",
-  "description": "A simple click wheel.",
+  "version": "1.0.16",
+  "description": "A simple iPod click wheel.",
   "main": "./lib/ClickWheel.js",
   "repository": {
     "type": "git",

@@ -4,11 +4,6 @@ body {
   overflow: hidden;
 }
 
-#body {
-  overflow: auto;
-  height: 100vh;
-}
-
 .iw-container {
   position: fixed;
   bottom: 40px;
@@ -99,6 +94,8 @@ body {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .hide-scroll {
+  overflow: hidden;
+  height: 100vh;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
